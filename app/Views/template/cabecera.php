@@ -9,22 +9,31 @@
   <title>Inicio</title>
 </head>
   <body>
-  <nav class="navbar navbar-expand-lg bg-light">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#"><?php echo session('usuario'); ?></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" href="<?php echo base_url('/salir'); ?>">Salir<span class="sr-only"></span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" href="#">NUEVO +</a>
-        </li>
+    <nav class="navbar navbar-expand-lg bg-light btn btn-secondary">
+      <div class="container-fluid btn btn-secondary">
+        <a class="navbar-brand" href="#"><?php echo session('usuario'); ?></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" href="<?php echo base_url('/saveUsuario'); ?>" >Nuevo+usuario</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="<?php echo base_url('/bodega'); ?>" >Bodega</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="<?php echo base_url('/vender'); ?>" >Proyecto</a>
+            </li>
+          </ul>
 
-      </ul>
-
-    </div>
-  </div>
+        </div>
+        <li class="nav-item" style="list-style: none; margin-right: 10px;">
+          <a href="<?php echo base_url('/inicio'); ?>" class="btn btn-primary float-end" ><i class="fa-solid fa-arrow-rotate-left"></i> Volver</a>
+        </li>
+        <li class="nav-item" style="list-style: none;">
+          <a href="<?php echo base_url('/salir'); ?>" class="btn btn-danger float-end">SALIR<span class="sr-only" ></span></a>
+        </li>
+      </div>
+    </nav>

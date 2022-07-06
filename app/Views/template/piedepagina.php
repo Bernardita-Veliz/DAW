@@ -1,6 +1,6 @@
         <br></br>
         <br></br>
-        <em>&copy; Pagina creada por javierita</em>
+        <em style="width: 100%;position: absolute; bottom: 0; text-align: center">&copy; Pagina creada por javierita</em>
     </body>
 
     

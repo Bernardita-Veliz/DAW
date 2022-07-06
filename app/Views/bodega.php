@@ -3,10 +3,11 @@
 <div class="row">
   <div class="col-sm-12 mt-5">
 
-    <div class="card card-body table-responsive ">
+    <div class="card card-body table-responsive">
       <table class="table table-responsive table-bordered ">
         <h4 class="p-3 bg-secondary bg-gradient fw-bold text-center"> PRODUCTOS EN BODEGA
-          <a href="<?= base_url('saveEmployee') ?>" class="btn btn-warning float-end">Agregar+Producto</a> 
+          <a href="<?= base_url('saveEmployee') ?>" class="btn btn-warning float-end">Agregar+Producto</a>
+          
         </h4>
         <tr>
           <th>ID_PRODUCTO</th>
@@ -23,6 +24,7 @@
           <th><?php echo $key->descripcion ?></th>
           <th><?php echo $key->cantidad ?></th>
           <td>
+            
             <a href="<?php echo base_url('/editar'); ?>" type="button" class="btn btn-primary"><i class="fa-solid fa-paintbrush"></i></a>
           </td>
           <td>
@@ -41,5 +43,3 @@
 </div>
 
 <?= $this->include('template/piedepagina');?>
-
-
